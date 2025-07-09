@@ -1,6 +1,11 @@
 {
   "title": "Dagster+ Overview",
   "description": "This dashboard provides a high-level overview of Dagster+ event logs in Datadog.",
+  "author_handle": "quinlan@dagsterlabs.com",
+  "author_name": "Sean Quinlan",
+  "layout_type": "ordered",
+  "url": "/dashboard/gsx-993-7fu/dagster-overview",
+  "template_variables": [],
   "widgets": [
     {
       "id": 1493381986726627,
@@ -14,13 +19,13 @@
             "id": 3977115018746163,
             "definition": {
               "type": "image",
-              "url": "https://dagster.io/images/brand/logos/dagster_plus-primary-horizontal.png",
-              "url_dark_theme": "https://dagster.io/images/brand/logos/dagster_plus-reversed-horizontal.png",
+              "url": "https://dagster.cloud/vendor/dagster_plus-primary-horizontal.png",
+              "url_dark_theme": "https://dagster.cloud/vendor/dagster_plus-reversed-horizontal.png",
               "sizing": "contain",
-              "margin": "md",
-              "has_background": true,
-              "has_border": true,
-              "vertical_align": "top",
+              "margin": "sm",
+              "has_background": false,
+              "has_border": false,
+              "vertical_align": "center",
               "horizontal_align": "center"
             },
             "layout": {
@@ -175,7 +180,7 @@
                   ],
                   "formulas": [
                     {
-                      "formula": "query1"
+                      "formula": "default_zero(query1)"
                     }
                   ]
                 }
@@ -223,7 +228,7 @@
                   ],
                   "formulas": [
                     {
-                      "formula": "query1"
+                      "formula": "default_zero(query1)"
                     }
                   ]
                 }
@@ -602,9 +607,10 @@
       },
       "layout": {
         "x": 0,
-        "y": 13,
+        "y": 0,
         "width": 12,
-        "height": 4
+        "height": 4,
+        "is_column_break": true
       }
     },
     {
@@ -759,15 +765,13 @@
       },
       "layout": {
         "x": 0,
-        "y": 17,
+        "y": 4,
         "width": 12,
         "height": 4
       }
     }
   ],
-  "template_variables": [],
-  "layout_type": "ordered",
   "notify_list": [],
-  "reflow_type": "fixed",
-  "tags": []
+  "created_at": "2025-04-09T22:25:28.686082+00:00",
+  "reflow_type": "fixed"
 }
